@@ -18,7 +18,7 @@ def mostrar_conteudo_anatomico():
         *   **Vasos Coletores:** Formados pela união dos capilares, possuem válvulas para garantir o fluxo unidirecional da linfa. Seguem trajetos semelhantes aos das veias.
         *   **Troncos Linfáticos:** Formados pela união de vasos coletores maiores. Drenam grandes regiões do corpo (ex: Tronco Lombar, Tronco Intestinal, Tronco Subclávio).
         *   **Ductos Linfáticos:** Os maiores vasos linfáticos. Existem dois principais:
-            *   **Ducto Torácico (ou Esquerdo):** O maior. Coleta linfa da maior parte do corpo (membros inferiores, abdômen, lado esquerdo do tórax, cabeça, pescoço e membro superior esquerdo). Desemboca na junção da veia subclávia esquerda com a veia jugular interna esquerda.
+            *   **Ducto Torácico:** O maior. Coleta linfa da maior parte do corpo (membros inferiores, abdômen, lado esquerdo do tórax, cabeça, pescoço e membro superior esquerdo). Desemboca na junção da veia subclávia esquerda com a veia jugular interna esquerda.
             *   **Ducto Linfático Direito:** Menor. Coleta linfa do lado direito da cabeça, pescoço, tórax e membro superior direito. Desemboca na junção da veia subclávia direita com a veia jugular interna direita.
     *   **Órgãos Linfóides:**
         *   **Primários (onde linfócitos se desenvolvem e maturam):**
@@ -27,7 +27,7 @@ def mostrar_conteudo_anatomico():
         *   **Secundários (onde ocorrem as respostas imunes):**
             *   **Linfonodos (Gânglios Linfáticos):** Pequenos órgãos em forma de feijão, distribuídos ao longo dos vasos linfáticos. Filtram a linfa, removendo patógenos e detritos. Local de ativação de linfócitos.
             *   **Baço:** O maior órgão linfóide. Filtra o sangue (não a linfa), removendo células sanguíneas velhas e patógenos. Importante na resposta imune contra antígenos sanguíneos.
-            *   **Tonsilas (Amígdalas):** Aglomerados de tecido linfóide na entrada da faringe (palatinas, faríngea/adenóide, linguais). Formam um anel de proteção contra patógenos inalados ou ingeridos.
+            *   **Tonsilas:** Aglomerados de tecido linfóide na entrada da faringe (palatinas, faríngea/adenóide, linguais). Formam um anel de proteção contra patógenos inalados ou ingeridos.
             *   **MALT (Tecido Linfóide Associado à Mucosa):** Agregados difusos de tecido linfóide em mucosas (trato gastrointestinal - Placas de Peyer, respiratório, urinário).
 
     **Funções Principais:**
@@ -56,7 +56,7 @@ perguntas_quiz = [
         "feedback": "Exato! O Ducto Torácico é o maior ducto linfático e drena a linfa da maior parte do corpo para a junção venosa subclávia/jugular interna esquerda."
     },
     {
-        "pergunta": "Qual a principal função dos Linfonodos (gânglios linfáticos)?",
+        "pergunta": "Qual a principal função dos Linfonodos (gânglios linfáticos)?", # CORRIGIDO: (Gânglios Linfáticos) estava em comentário no original
         "opcoes": ["Produzir linfa", "Filtrar o sangue", "Filtrar a linfa e ativar linfócitos", "Absorver gorduras do intestino"],
         "correta": "Filtrar a linfa e ativar linfócitos",
         "feedback": "Perfeito! Os linfonodos atuam como filtros para a linfa, removendo patógenos e detritos, e são sítios importantes para o início da resposta imune."
@@ -69,7 +69,7 @@ perguntas_quiz = [
     },
     {
         "pergunta": "Qual destes órgãos linfóides secundários é especializado em filtrar o SANGUE, e não a linfa?",
-        "opcoes": ["Linfonodo Mesentérico", "Tonsila Faríngea (Adenóide)", "Baço", "Placa de Peyer"],
+        "opcoes": ["Linfonodo Mesentérico", "Tonsila Faríngea", "Baço", "Placa de Peyer"],
         "correta": "Baço",
         "feedback": "Correto! O Baço é o grande filtro do sangue no sistema linfático, removendo células velhas e combatendo infecções sanguíneas."
     },
@@ -102,6 +102,41 @@ perguntas_quiz = [
         "opcoes": ["Todo o lado direito do corpo", "Apenas o membro inferior direito", "Lado direito da cabeça, pescoço, tórax e membro superior direito", "Todo o corpo exceto o membro superior direito"],
         "correta": "Lado direito da cabeça, pescoço, tórax e membro superior direito",
         "feedback": "Exato! O Ducto Linfático Direito é responsável por uma área bem menor que o Ducto Torácico, coletando linfa dessas regiões específicas."
+    }, # <<<< VÍRGULA ADICIONADA AQUI
+    {
+        "pergunta": "Quais estruturas são primariamente drenadas pelos Troncos Lombares?",
+        "opcoes": ["Cabeça e Pescoço", "Membros Superiores e parede torácica", "Membros Inferiores, Pelve e rins", "Pulmões e Coração"],
+        "correta": "Membros Inferiores, Pelve e rins",
+        "feedback": "Correto! Os Troncos Lombares (geralmente um par) coletam linfa dos membros inferiores, órgãos pélvicos, rins, glândulas adrenais e parte da parede abdominal."
+    },
+    {
+        "pergunta": "Qual tronco linfático principal é conhecido por transportar o 'quilo' (linfa rica em gordura absorvida) do intestino?",
+        "opcoes": ["Tronco Jugular", "Tronco Subclávio", "Tronco Intestinal", "Tronco Broncomediastinal"],
+        "correta": "Tronco Intestinal",
+        "feedback": "Exato! O Tronco Intestinal (geralmente único) recebe a linfa rica em lipídios (quilo) do estômago, intestinos, pâncreas, baço e parte do fígado."
+    },
+    {
+        "pergunta": "A linfa da cabeça e do pescoço é coletada principalmente por quais troncos antes de chegar aos ductos principais?",
+        "opcoes": ["Troncos Lombares", "Troncos Intestinais", "Troncos Jugulares", "Troncos Subclávios"],
+        "correta": "Troncos Jugulares",
+        "feedback": "Perfeito! Os Troncos Jugulares (um de cada lado) são responsáveis por drenar a linfa da cabeça e do pescoço."
+    },
+    {
+        "pergunta": "Muitos troncos linfáticos da parte inferior do corpo (como os Lombares e o Intestinal) convergem para formar qual estrutura dilatada na base do Ducto Torácico?",
+        "opcoes": ["Seio Coronário", "Cisterna do Quilo", "Confluência dos Seios Venosos", "Hilo do Baço"],
+        "correta": "Cisterna do Quilo",
+        "feedback": "Isso mesmo! A Cisterna do Quilo é um saco dilatado, presente em muitas pessoas na região lombar (L1-L2), que serve como ponto de coleta para a linfa antes dela subir pelo Ducto Torácico."
+    }, # <<<< VÍRGULA ADICIONADA AQUI
+    {
+        "pergunta": "Os Troncos Subclávios são responsáveis por drenar a linfa principalmente de qual(is) região(ões), antes de esta alcançar os ductos linfáticos principais?",
+        "opcoes": [
+            "Apenas a cabeça e o pescoço",
+            "Membros Superiores, parte da parede torácica e pescoço",
+            "Órgãos abdominais e membros inferiores",
+            "Pulmões e estruturas do mediastino"
+        ],
+        "correta": "Membros Superiores, parte da parede torácica e pescoço",
+        "feedback": "Correto! Os Troncos Subclávios (um de cada lado) recebem linfa dos membros superiores, bem como de algumas áreas da parede torácica e da região inferior do pescoço."
     }
 ]
 
@@ -115,10 +150,11 @@ def inicializar_estado():
         st.session_state.quiz_iniciado = False
     if 'quiz_concluido' not in st.session_state:
         st.session_state.quiz_concluido = False
-    if 'resposta_selecionada' not in st.session_state:
-        st.session_state.resposta_selecionada = None
-    if 'feedback_dado' not in st.session_state:
-        st.session_state.feedback_dado = False
+    # Removido 'resposta_selecionada' e 'feedback_dado' globais pois agora são por pergunta
+    # if 'resposta_selecionada' not in st.session_state:
+    #     st.session_state.resposta_selecionada = None
+    # if 'feedback_dado' not in st.session_state:
+    #     st.session_state.feedback_dado = False
     if 'nome_jogador' not in st.session_state:
         st.session_state.nome_jogador = ""
     # Embaralhar as perguntas apenas uma vez no início
@@ -160,43 +196,82 @@ elif st.session_state.quiz_iniciado and not st.session_state.quiz_concluido:
     st.progress((index_atual + 1) / total_perguntas) # Barra de progresso
     st.markdown(f"**{pergunta_obj['pergunta']}**")
 
-    # Opções de resposta
-    # Usamos um 'key' único para o radio baseado no índice da pergunta para evitar conflitos
-    opcao_escolhida = st.radio(
-        "Escolha sua resposta:",
-        options=pergunta_obj['opcoes'],
-        index=None, # Nenhuma opção pré-selecionada
-        key=f"q_{index_atual}" # Chave única para este widget
-    )
+    # --- INÍCIO DO BLOCO CORRIGIDO (SUBSTITUI O ANTIGO) ---
+    # Usar uma chave de estado específica para feedback desta pergunta
+    feedback_key = f'feedback_dado_{index_atual}'
+    if feedback_key not in st.session_state:
+        st.session_state[feedback_key] = False
 
-    # Botão de confirmação de resposta
-    if st.button("Confirmar Resposta", key=f"submit_{index_atual}"):
-        if opcao_escolhida:
-            st.session_state.resposta_selecionada = opcao_escolhida
-            st.session_state.feedback_dado = True
-            # Verificar se a resposta está correta
-            if opcao_escolhida == pergunta_obj['correta']:
-                st.session_state.score += 1
-                st.success(f"✅ Correto! {pergunta_obj['feedback']}")
+    # --- Parte 1: Mostrar Opções e Botão Confirmar (se o feedback ainda não foi dado) ---
+    if not st.session_state[feedback_key]:
+        opcao_escolhida = st.radio(
+            "Escolha sua resposta:",
+            options=pergunta_obj['opcoes'],
+            index=None, # Nenhuma opção pré-selecionada
+            key=f"q_{index_atual}" # Chave única para o radio desta pergunta
+        )
+
+        if st.button("Confirmar Resposta", key=f"submit_{index_atual}"):
+            if opcao_escolhida:
+                # 1. Marcar que o feedback será dado
+                st.session_state[feedback_key] = True
+                # 2. Salvar a escolha e verificar correção
+                st.session_state[f'resposta_escolhida_{index_atual}'] = opcao_escolhida
+                if opcao_escolhida == pergunta_obj['correta']:
+                    st.session_state.score += 1
+                    st.session_state[f'resultado_{index_atual}'] = True
+                else:
+                    st.session_state[f'resultado_{index_atual}'] = False
+                # 3. Rerun para mostrar o feedback e o botão de avançar
+                st.rerun()
             else:
-                st.error(f"❌ Incorreto. A resposta correta é: **{pergunta_obj['correta']}**. {pergunta_obj['feedback']}")
+                # Este warning agora só aparece se clicar em confirmar sem escolher nada
+                st.warning("🤔 Por favor, selecione uma resposta antes de confirmar.")
 
-            # Preparar para a próxima pergunta ou finalizar
-            if index_atual + 1 < total_perguntas:
-                 st.session_state.pergunta_atual_index += 1
-            else:
-                 st.session_state.quiz_concluido = True
+    # --- Parte 2: Mostrar Feedback e Botão Avançar (se o feedback JÁ foi dado) ---
+    else: # Ou seja, st.session_state[feedback_key] is True
+        # Recuperar a resposta escolhida e o resultado
+        escolha_salva = st.session_state.get(f'resposta_escolhida_{index_atual}')
+        foi_correto = st.session_state.get(f'resultado_{index_atual}')
 
-            # Botão para avançar (aparece após confirmar)
-            if st.session_state.quiz_concluido:
-                st.button("Ver Resultado Final", key="ver_resultado") # A ação real acontece no rerun abaixo
-            else:
-                st.button("Próxima Pergunta", key="proxima") # A ação real acontece no rerun abaixo
+        # Mostrar as opções desabilitadas com a resposta marcada
+        st.radio(
+            "Sua resposta:",
+            options=pergunta_obj['opcoes'],
+            # A linha abaixo encontra o índice da opção salva para marcar no radio desabilitado
+            index=pergunta_obj['opcoes'].index(escolha_salva) if escolha_salva in pergunta_obj['opcoes'] else None,
+            key=f"q_{index_atual}_disabled", # Chave diferente para evitar conflito
+            disabled=True # Desabilitar opções após responder
+        )
 
-            st.rerun() # Atualiza a interface para mostrar feedback e botão de avançar
-
+        # Mostrar o feedback
+        if foi_correto:
+            st.success(f"✅ Correto! {pergunta_obj['feedback']}")
         else:
-            st.warning("🤔 Por favor, selecione uma resposta antes de confirmar.")
+            st.error(f"❌ Incorreto. A resposta correta é: **{pergunta_obj['correta']}**. {pergunta_obj['feedback']}")
+
+        # Mostrar o botão para avançar
+        if index_atual + 1 < total_perguntas:
+            if st.button("Próxima Pergunta", key=f"next_{index_atual}"):
+                # Limpar estado específico da pergunta atual (opcional, mas ajuda a limpar a memória do estado)
+                # Se descomentar, remova as chaves correspondentes também na inicialização ou quando reiniciar
+                # if feedback_key in st.session_state: del st.session_state[feedback_key]
+                # if f'resposta_escolhida_{index_atual}' in st.session_state: del st.session_state[f'resposta_escolhida_{index_atual}']
+                # if f'resultado_{index_atual}' in st.session_state: del st.session_state[f'resultado_{index_atual}']
+                # Avançar
+                st.session_state.pergunta_atual_index += 1
+                st.rerun()
+        else:
+            if st.button("Ver Resultado Final", key=f"finish_{index_atual}"):
+                # Limpar estado específico da pergunta atual (opcional)
+                # if feedback_key in st.session_state: del st.session_state[feedback_key]
+                # if f'resposta_escolhida_{index_atual}' in st.session_state: del st.session_state[f'resposta_escolhida_{index_atual}']
+                # if f'resultado_{index_atual}' in st.session_state: del st.session_state[f'resultado_{index_atual}']
+                # Finalizar
+                st.session_state.quiz_concluido = True
+                st.rerun()
+    # --- FIM DO BLOCO CORRIGIDO ---
+    # <<< Note que o código antigo que estava aqui foi REMOVIDO >>>
 
 
 # --- Tela de Resultados Finais ---
@@ -204,8 +279,9 @@ elif st.session_state.quiz_concluido:
     st.balloons()
     st.header("🎉 Quiz Concluído! 🎉")
     pontuacao = st.session_state.score
-    total_perguntas = len(st.session_state.perguntas_embaralhadas)
-    percentual = (pontuacao / total_perguntas) * 100
+    # Recalcular total_perguntas aqui para garantir que está atualizado
+    total_perguntas = len(perguntas_quiz) # Usar a lista original aqui é mais seguro
+    percentual = (pontuacao / total_perguntas) * 100 if total_perguntas > 0 else 0
 
     st.metric("Sua Pontuação Final:", f"{pontuacao} / {total_perguntas}", f"{percentual:.1f}% de acerto")
 
@@ -232,13 +308,19 @@ elif st.session_state.quiz_concluido:
     # Botão para reiniciar
     if st.button("Jogar Novamente"):
         # Resetar o estado para um novo jogo
+        # É importante limpar TODAS as chaves de estado que criamos dinamicamente (feedback_dado_X, etc.)
+        # Uma forma mais robusta é iterar e limpar chaves específicas, ou apenas resetar as básicas se não houver problema de memória.
+        # Reset básico:
         st.session_state.score = 0
         st.session_state.pergunta_atual_index = 0
         st.session_state.quiz_iniciado = False
         st.session_state.quiz_concluido = False
-        st.session_state.resposta_selecionada = None
-        st.session_state.feedback_dado = False
         st.session_state.nome_jogador = ""
+        # Limpar chaves de feedback/resposta para evitar que estados antigos persistam
+        keys_to_delete = [k for k in st.session_state.keys() if k.startswith('feedback_dado_') or k.startswith('resposta_escolhida_') or k.startswith('resultado_')]
+        for key in keys_to_delete:
+            del st.session_state[key]
+
         # Reembaralhar perguntas para a nova tentativa
         perguntas_shuffled = random.sample(perguntas_quiz, len(perguntas_quiz))
         st.session_state.perguntas_embaralhadas = perguntas_shuffled
@@ -246,4 +328,4 @@ elif st.session_state.quiz_concluido:
 
 # --- Rodapé ---
 st.divider()
-st.caption("Desenvolvido com 🧠 e ❤️ para os futuros experts em anatomia!")
+st.caption("Desenvolvido para você gabaritar a prova de anato!")
