@@ -18,17 +18,17 @@ def mostrar_conteudo_anatomico():
         *   **Vasos Coletores:** Formados pela união dos capilares, possuem válvulas para garantir o fluxo unidirecional da linfa. Seguem trajetos semelhantes aos das veias.
         *   **Troncos Linfáticos:** Formados pela união de vasos coletores maiores. Drenam grandes regiões do corpo (ex: Tronco Lombar, Tronco Intestinal, Tronco Subclávio).
         *   **Ductos Linfáticos:** Os maiores vasos linfáticos. Existem dois principais:
-            *   **Ducto Torácico:** O maior. Coleta linfa da maior parte do corpo (membros inferiores, abdômen, lado esquerdo do tórax, cabeça, pescoço e membro superior esquerdo). Desemboca na junção da veia subclávia esquerda com a veia jugular interna esquerda.
-            *   **Ducto Linfático Direito:** Menor. Coleta linfa do lado direito da cabeça, pescoço, tórax e membro superior direito. Desemboca na junção da veia subclávia direita com a veia jugular interna direita.
-    *   **Órgãos Linfóides:**
+            *   **Ducto Torácico:** O maior. Coleta linfa da maior parte do corpo (membros inferiores, abdome, lado esquerdo do tórax, cabeça, pescoço e membro superior esquerdo). Desemboca na junção da veia subclávia esquerda com a veia jugular interna esquerda (Ângulo venoso esquerdo).
+            *   **Ducto Linfático Direito:** Menor. Coleta linfa do lado direito da cabeça, pescoço, tórax e membro superior direito. Desemboca na junção da veia subclávia direita com a veia jugular interna direita (Ângulo venoso direito).
+    *   **Órgãos Linfáticos:**
         *   **Primários (onde linfócitos se desenvolvem e maturam):**
             *   **Medula Óssea Vermelha:** Local de origem de todas as células sanguíneas, incluindo linfócitos B e T. Local de maturação dos linfócitos B.
             *   **Timo:** Localizado no mediastino superior. Essencial para a maturação dos linfócitos T (T de Timo). Atrofia com a idade.
         *   **Secundários (onde ocorrem as respostas imunes):**
-            *   **Linfonodos (Gânglios Linfáticos):** Pequenos órgãos em forma de feijão, distribuídos ao longo dos vasos linfáticos. Filtram a linfa, removendo patógenos e detritos. Local de ativação de linfócitos.
-            *   **Baço:** O maior órgão linfóide. Filtra o sangue (não a linfa), removendo células sanguíneas velhas e patógenos. Importante na resposta imune contra antígenos sanguíneos.
-            *   **Tonsilas:** Aglomerados de tecido linfóide na entrada da faringe (palatinas, faríngea/adenóide, linguais). Formam um anel de proteção contra patógenos inalados ou ingeridos.
-            *   **MALT (Tecido Linfóide Associado à Mucosa):** Agregados difusos de tecido linfóide em mucosas (trato gastrointestinal - Placas de Peyer, respiratório, urinário).
+            *   **Linfonodos:** Pequenos órgãos linfáticos, distribuídos ao longo dos vasos linfáticos. Filtram a linfa, removendo patógenos e detritos. Local de ativação de linfócitos.
+            *   **Baço:** O maior órgão linfático. Filtra o sangue (não a linfa), removendo células sanguíneas velhas e patógenos. Importante na resposta imune contra antígenos sanguíneos.
+            *   **Tonsilas:** Aglomerados de tecido linfático na entrada da faringe (palatinas, faríngea/adenóide, linguais). Formam um anel de proteção contra patógenos inalados ou ingeridos.
+            *   **MALT (Tecido Linfóide Associado à Mucosa):** Agregados difusos de tecido linfático em mucosas (trato gastrointestinal - Placas de Peyer, respiratório, urinário).
 
     **Funções Principais:**
     1.  **Drenagem do Excesso de Líquido Intersticial:** Retorna o excesso de fluido e proteínas que extravasam dos capilares sanguíneos de volta para a corrente sanguínea, mantendo o equilíbrio hídrico.
@@ -44,7 +44,7 @@ def mostrar_conteudo_anatomico():
 # --- Banco de Perguntas do Quiz ---
 perguntas_quiz = [
     {
-        "pergunta": "Qual destes é considerado um órgão linfóide primário, principal local de maturação dos linfócitos T?",
+        "pergunta": "Qual destes é considerado um órgão linfático primário, principal local de maturação dos linfócitos T?",
         "opcoes": ["Baço", "Linfonodo", "Timo", "Tonsila Palatina"],
         "correta": "Timo",
         "feedback": "Correto! O Timo é essencial para a maturação dos linfócitos T. O Baço, Linfonodos e Tonsilas são órgãos secundários."
@@ -53,10 +53,10 @@ perguntas_quiz = [
         "pergunta": "A maior parte da linfa do corpo é drenada para a circulação venosa através de qual estrutura?",
         "opcoes": ["Ducto Linfático Direito", "Veia Cava Superior", "Cisterna do Quilo", "Ducto Torácico"],
         "correta": "Ducto Torácico",
-        "feedback": "Exato! O Ducto Torácico é o maior ducto linfático e drena a linfa da maior parte do corpo para a junção venosa subclávia/jugular interna esquerda."
+        "feedback": "Exato! O Ducto Torácico é o maior ducto linfático e drena a linfa da maior parte do corpo para o ângulo venoso esquerdo."
     },
     {
-        "pergunta": "Qual a principal função dos Linfonodos (gânglios linfáticos)?", # CORRIGIDO: (Gânglios Linfáticos) estava em comentário no original
+        "pergunta": "Qual a principal função dos Linfonodos?", # CORRIGIDO: (Gânglios Linfáticos) estava em comentário no original
         "opcoes": ["Produzir linfa", "Filtrar o sangue", "Filtrar a linfa e ativar linfócitos", "Absorver gorduras do intestino"],
         "correta": "Filtrar a linfa e ativar linfócitos",
         "feedback": "Perfeito! Os linfonodos atuam como filtros para a linfa, removendo patógenos e detritos, e são sítios importantes para o início da resposta imune."
@@ -92,7 +92,7 @@ perguntas_quiz = [
         "feedback": "Correto! Todas as células sanguíneas, incluindo os precursores dos linfócitos B e T, se originam na medula óssea vermelha."
     },
     {
-        "pergunta": "Qual o nome do conjunto de tecido linfóide associado às mucosas, como as Placas de Peyer no intestino?",
+        "pergunta": "Qual o nome do conjunto de tecido linfático associado às mucosas, como as Placas de Peyer no intestino?",
         "opcoes": ["SALT (Skin-Associated Lymphoid Tissue)", "BALT (Bronchus-Associated Lymphoid Tissue)", "GALT (Gut-Associated Lymphoid Tissue)", "MALT (Mucosa-Associated Lymphoid Tissue)"],
         "correta": "MALT (Mucosa-Associated Lymphoid Tissue)",
         "feedback": "Perfeito! MALT é o termo geral. GALT (intestino), BALT (brônquios), etc., são subtipos de MALT."
@@ -125,7 +125,7 @@ perguntas_quiz = [
         "pergunta": "Muitos troncos linfáticos da parte inferior do corpo (como os Lombares e o Intestinal) convergem para formar qual estrutura dilatada na base do Ducto Torácico?",
         "opcoes": ["Seio Coronário", "Cisterna do Quilo", "Confluência dos Seios Venosos", "Hilo do Baço"],
         "correta": "Cisterna do Quilo",
-        "feedback": "Isso mesmo! A Cisterna do Quilo é um saco dilatado, presente em muitas pessoas na região lombar (L1-L2), que serve como ponto de coleta para a linfa antes dela subir pelo Ducto Torácico."
+        "feedback": "Isso mesmo! A Cisterna do Quilo é um saco dilatado, presente em muitas pessoas na região lombar (L1-L2), que serve como ponto de coleta para a linfa antes dela ascender pelo Ducto Torácico."
     }, # <<<< VÍRGULA ADICIONADA AQUI
     {
         "pergunta": "Os Troncos Subclávios são responsáveis por drenar a linfa principalmente de qual(is) região(ões), antes de esta alcançar os ductos linfáticos principais?",
